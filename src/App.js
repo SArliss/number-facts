@@ -5,6 +5,7 @@ import './App.css';
 import { getFacts } from './services/Api-helper';
 import Form from './components/Form';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -48,7 +49,8 @@ class App extends React.Component {
         />
 
         <div className="number-fact">{this.state.fact}</div>
-
+        <Footer />
+        
       </div >
     );
   }
