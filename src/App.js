@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import axios from 'axios';
+// Importing custom components
+import { getFacts } from './services/Api-helper';
 
 
 class App extends React.Component {
@@ -9,56 +10,51 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      value: "18",
-      type: "math"
+      format: "",
+      value: "",
+      fact: ""
     }
   }
 
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
 
-  componentDidMount = async () => {
-    const type = this.state.type;
-    console.log(type);
+  }
+
+  handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const format = this.state.format;
     const value = this.state.value;
+
+    console.log(format);
     console.log(value);
-    let response = "";
 
-    switch (type) {
-      case "number":
-        response = await axios.get(`http://numbersapi.com/${value}`);
-        break;
-
-      case "year":
-        response = await axios.get(`http://numbersapi.com/${value}/year`);
-        break;
-
-      case "date":
-        response = await axios.get(`http://numbersapi.com/${value}/date`);
-        break;
-
-      case "math":
-        response = await axios.get(`http://numbersapi.com/${value}/math`);
-        break;
-
-      case "random":
-        response = await axios.get(`http://numbersapi.com/random`);
-        break;
-
-      default:
-        response = await axios.get(`http://numbersapi.com/random`);
-        break;
-    }
-
+    const response = await getFacts(format, value);
+    const fact = response.data;
 
     this.setState({
-      value: response.data
-    })
+      fact: fact
+    });
   }
-
 
   render() {
     return (
       <div className="app">
-        {this.state.value}
+
+        <div className="main-section">
+
+          <form className="submit-form" onSubmit={this.handleSubmit}>
+            <input type="text" name="format" onChange={this.handleChange} placeholder="format" />
+            <input type="text" name="value" onChange={this.handleChange} placeholder="number" />
+            <input type="submit" value="Search" />
+          </form>
+
+          <div className="number-fact">{this.state.fact}</div>
+
+        </div>
       </div >
     );
   }
