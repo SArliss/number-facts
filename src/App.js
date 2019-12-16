@@ -3,7 +3,7 @@ import './App.css';
 
 // Importing custom components
 import { getFacts } from './services/Api-helper';
-
+import Form from './components/Form';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,8 +12,7 @@ class App extends React.Component {
     this.state = {
       format: "",
       value: "",
-      fact: "",
-      submitValue: "Search"
+      fact: ""
     }
   }
 
@@ -37,8 +36,7 @@ class App extends React.Component {
     const fact = response.data;
 
     this.setState({
-      fact: fact,
-      submitValue: "Load more facts ..."
+      fact: fact
     });
   }
 
@@ -46,17 +44,13 @@ class App extends React.Component {
     return (
       <div className="app">
 
-        <div className="main-section">
+        <Form
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+        />
 
-          <form className="submit-form" onSubmit={this.handleSubmit}>
-            <input type="text" name="format" onChange={this.handleChange} placeholder="format" />
-            <input type="text" name="value" onChange={this.handleChange} placeholder="number" />
-            <input type="submit" value={this.state.submitValue} />
-          </form>
+        <div className="number-fact">{this.state.fact}</div>
 
-          <div className="number-fact">{this.state.fact}</div>
-
-        </div>
       </div >
     );
   }
