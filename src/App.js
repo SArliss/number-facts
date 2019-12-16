@@ -12,7 +12,8 @@ class App extends React.Component {
     this.state = {
       format: "",
       value: "",
-      fact: ""
+      fact: "",
+      submitValue: "Search"
     }
   }
 
@@ -36,7 +37,8 @@ class App extends React.Component {
     const fact = response.data;
 
     this.setState({
-      fact: fact
+      fact: fact,
+      submitValue: "Load more facts ..."
     });
   }
 
@@ -49,7 +51,7 @@ class App extends React.Component {
           <form className="submit-form" onSubmit={this.handleSubmit}>
             <input type="text" name="format" onChange={this.handleChange} placeholder="format" />
             <input type="text" name="value" onChange={this.handleChange} placeholder="number" />
-            <input type="submit" value="Search" />
+            <input type="submit" value={this.state.submitValue} />
           </form>
 
           <div className="number-fact">{this.state.fact}</div>
