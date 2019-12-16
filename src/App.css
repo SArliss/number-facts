@@ -1,0 +1,46 @@
+.main-section {
+  display: flex; 
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.submit-form {
+  display: flex; 
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 20px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+input[type=text] {
+  font-size: 15px;
+  margin: 6px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid rgb(113, 113, 113);
+  text-align: center;
+}
+
+input[type=submit] {
+  font-size: 15px;
+  padding: 5px;
+  margin: 6px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(26, 26, 26);
+  background-color: rgb(49, 186, 216);
+  border: 1px solid rgb(113, 113, 113);
+}
+
+.number-fact {
+  font-size: 15px;
+  margin: 0;
+  padding: 20px;
+  color: rgb(55, 55, 55);
+  background-color: rgb(231, 249, 255);
+  text-align: center;
+}
