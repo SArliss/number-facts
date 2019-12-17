@@ -3,10 +3,7 @@ import './App.css';
 import { Route, Link } from "react-router-dom";
 
 // Importing custom components
-import { getFacts } from './services/Api-helper';
-import Form from './components/Form';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Second from './components/Second';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,42 +16,25 @@ class App extends React.Component {
     }
   }
 
-  handleChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  }
-
-  handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const category = this.state.category;
-    const value = this.state.value;
-    // Calling the function getFacts that contains the API calls
-    const response = await getFacts(category, value);
-    const fact = response.data;
-
-    this.setState({
-      fact: fact
-    });
-  }
-
   render() {
     return (
-      <div className="app">
+      <div className="App">
+        <nav>
+          <Link to="/Second">Second Page</Link>
+          <Link to="/">Home</Link>
+        </nav>
+        <main>
+          {/* create the routes; they will not appear on the page */}
+          <Route
+            path="/Second" render={() => <Second />}
+          />
 
-        <Header />
-        <Form
-          handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
-        />
-
-        <div className="number-fact">{this.state.fact}</div>
-        <Footer />
-        
-      </div >
-    );
+        </main>
+      </div>
+    )
   }
+
+
 }
 
 export default App;
