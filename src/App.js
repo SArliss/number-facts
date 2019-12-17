@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Route, Link } from "react-router-dom";
 
 // Importing custom components
 import { getFacts } from './services/Api-helper';
