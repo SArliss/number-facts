@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <h1>NUMBER FACTS</h1>
-      <p>Bringing interesting facts to your metrics!</p>
+      <h3>Bringing interesting facts to your metrics!</h3>
     </header>
   )
 }
