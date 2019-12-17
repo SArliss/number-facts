@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 
-export const getFacts = async (format, value) => {
+export const getFacts = async (category, value) => {
   let response = "";
 
-  switch (format) {
+  switch (category) {
     case "number":
       response = await axios.get(`http://numbersapi.com/${value}`);
       return (response);

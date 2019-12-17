@@ -12,7 +12,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      format: "",
+      category: "",
       value: "",
       fact: ""
     }
@@ -27,10 +27,10 @@ class App extends React.Component {
   handleSubmit = async (e) => {
     e.preventDefault();
 
-    const format = this.state.format;
+    const category = this.state.category;
     const value = this.state.value;
     // Calling the function getFacts that contains the API calls
-    const response = await getFacts(format, value);
+    const response = await getFacts(category, value);
     const fact = response.data;
 
     this.setState({
