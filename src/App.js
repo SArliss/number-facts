@@ -3,11 +3,11 @@ import './App.css';
 import { Route, Link } from "react-router-dom";
 
 // Importing custom components
-import Second from './components/Second';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Home from './components/Home';
+import Number from './components/Number';
 
 class App extends React.Component {
   constructor(props) {
@@ -27,12 +27,13 @@ class App extends React.Component {
         <Nav />
 
         <main>
-          <Route
-            path="/Second" render={() => <Second />}
-          />
 
           <Route
             path="/Home" render={() => <Home />}
+          />
+
+          <Route
+            path="/Number" render={() => <Number />}
           />
 
 

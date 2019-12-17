@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Nav() {
@@ -8,9 +8,6 @@ function Nav() {
     <nav>
       <div>
         <Link to="/Home">Home</Link>
-      </div>
-      <div>
-        <Link to="/Second">Lets explore!</Link>
       </div>
     </nav>
   )

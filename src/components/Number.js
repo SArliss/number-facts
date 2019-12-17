@@ -3,14 +3,13 @@ import React from 'react';
 // Importing custom components
 import { getFacts } from '../services/Api-helper';
 import Form from './Form';
-import Nav from './Nav';
 
 class Second extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      category: "",
+      category: "number",
       value: "",
       fact: ""
     }
@@ -39,9 +38,7 @@ class Second extends React.Component {
   render() {
     return (
       <div className="second-page">
-
-        
-       
+       <p>NUMBER CATEGORY</p>
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}

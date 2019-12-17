@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -7,23 +7,23 @@ function Home() {
     <div className="front-categories">
 
       <div>
-      <Link to="/Second">Number</Link>
+        <Link to="/Number">Number</Link>
       </div>
 
       <div>
-      <Link to="/Second">Date</Link>
+        <Link to="/#">Date</Link>
       </div>
 
       <div>
-      <Link to="/Second">Year</Link>
+        <Link to="/#">Year</Link>
       </div>
 
       <div>
-      <Link to="/Second">Math</Link>
+        <Link to="/#">Math</Link>
       </div>
 
       <div>
-      <Link to="/Second">Random</Link>
+        <Link to="/#">Random</Link>
       </div>
 
 
