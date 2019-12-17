@@ -3,9 +3,7 @@ import React from 'react';
 // Importing custom components
 import { getFacts } from '../services/Api-helper';
 import Form from './Form';
-import Header from './Header';
-import Footer from './Footer';
-
+import Nav from './Nav';
 
 class Second extends React.Component {
   constructor(props) {
@@ -40,16 +38,17 @@ class Second extends React.Component {
 
   render() {
     return (
-      <div className="app">
+      <div className="second-page">
 
-        <Header />
+        
+       
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
 
         <div className="number-fact">{this.state.fact}</div>
-        <Footer />
+        
 
       </div >
     );

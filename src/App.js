@@ -4,6 +4,10 @@ import { Route, Link } from "react-router-dom";
 
 // Importing custom components
 import Second from './components/Second';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Nav from './components/Nav';
+import Home from './components/Home';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,17 +23,32 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Header />
+
         <nav>
-          <Link to="/Second">Second Page</Link>
-          <Link to="/">Home</Link>
+          <div>
+            <Link to="/Home">Home</Link>
+          </div>
+
+          <div>
+            <Link to="/Second">Lets explore!</Link>
+          </div>
         </nav>
+
         <main>
-          {/* create the routes; they will not appear on the page */}
           <Route
             path="/Second" render={() => <Second />}
           />
 
+          <Route
+            path="/Home" render={() => <Home />}
+          />
+
+
         </main>
+
+        <Footer />
+
       </div>
     )
   }
