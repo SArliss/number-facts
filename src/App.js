@@ -24,16 +24,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-
-        <nav>
-          <div>
-            <Link to="/Home">Home</Link>
-          </div>
-
-          <div>
-            <Link to="/Second">Lets explore!</Link>
-          </div>
-        </nav>
+        <Nav />
 
         <main>
           <Route

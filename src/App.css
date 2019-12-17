@@ -1,18 +1,17 @@
 body {
   background-image: url("https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png");
-  background-size: cover;
-  background-repeat: space;
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
   max-width: 80%;
-  height: 90%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgba(219, 253, 255, 0.5);
 }
 
-.main-section {
+.form-wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -87,7 +86,7 @@ footer {
   max-width: 300px;
   max-width: 100%;
   font-size: medium;
-  margin-top: 200px;
+  margin-top: 100px;
   font-size: 15px;
   text-align: center;
   flex-direction: column;
@@ -97,9 +96,50 @@ footer {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
   justify-content: space-around;
-  text-align: center;
-  margin: 35px auto;
-  max-width: 200px;
 }
+
+nav>* {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+
+.front-categories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  color: darkgoldenrod;
+  padding: 20px;
+}
+
+.front-categories>* {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 20px 20px;
+  padding: 10px;
+}
+
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
 
