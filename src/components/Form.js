@@ -6,8 +6,8 @@ function Form(props) {
     <div className="form-wrapper">
       <form className="submit-form" onSubmit={props.handleSubmit}>
         {/* <input type="text" name="category" onChange={props.handleChange} placeholder="category" /> */}
-        <input type="text" name="value" onChange={props.handleChange} placeholder="number" />
-        <input type="submit" value="Search" />
+        <input type="text" name="value" onChange={props.handleChange} placeholder="Number" />
+        <input type="submit" value="🔍" />
       </form>
     </div>
 

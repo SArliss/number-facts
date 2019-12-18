@@ -37,8 +37,9 @@ class Second extends React.Component {
 
   render() {
     return (
-      <div className="second-page">
-       <p>NUMBER CATEGORY</p>
+      <div className="category-wrapper">
+        <h4>Choose an integer number, get creative!</h4>
+        
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}

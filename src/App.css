@@ -8,44 +8,50 @@ body {
   max-width: 80%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgba(219, 253, 255, 0.5);
+  background-color: rgba(219, 253, 255, 0.7);
+}
+
+.category-wrapper {
+  margin-top: 7%;
 }
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .submit-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 50%;
   min-height: 10%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 input[type=text] {
+  width: 100px;
   font-size: 15px;
-  margin: 6px;
-  padding: 3px;
-  border-radius: 5px;
+  padding: 15px;
+  margin: 3px;
+  border-radius: 15px;
   border: 1px solid rgb(113, 113, 113, .2);
   text-align: center;
 }
 
 input[type=submit] {
-  font-size: 15px;
-  padding: 5px;
-  margin: 6px;
+  width: 50px;
+  font-size: 50px;
+  padding: 15px;
+  margin: 3px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
-  color: rgb(26, 26, 26);
-  background-color: rgb(49, 186, 216);
-  border: 1px solid rgb(113, 113, 113, .2);
+  border-radius: 100px;
+  color: rgb(62, 40, 40);
+  background-color: rgba(255, 255, 255, 0.5);;
+  border: 1px solid rgb(113, 113, 113, 0);
 }
 
 .number-fact {
@@ -77,6 +83,14 @@ h3 {
   font-weight: 900;
   color: rgb(49, 186, 216);
   margin: 0 auto;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  color: rgb(63, 181, 163);
+  text-align: center;
+  margin: 20px auto;
 }
 
 footer {
