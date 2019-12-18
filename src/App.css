@@ -20,7 +20,7 @@ img.bg {
 .App {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgba(219, 253, 255, 0.8);

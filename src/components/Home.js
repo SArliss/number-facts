@@ -13,13 +13,13 @@ function Home() {
           <Link to="/Number">Number</Link>
         </div>
         <div>
-          <Link to="/#">Date</Link>
+          <Link to="/Date">Date</Link>
         </div>
         <div>
-          <Link to="/#">Year</Link>
+          <Link to="/Year">Year</Link>
         </div>
         <div>
-          <Link to="/#">Math</Link>
+          <Link to="/Math">Math</Link>
         </div>
       </div>
     </div>
