@@ -12,24 +12,15 @@ function Home() {
         <div>
           <Link to="/Number">Number</Link>
         </div>
-
         <div>
           <Link to="/#">Date</Link>
         </div>
-
         <div>
           <Link to="/#">Year</Link>
         </div>
-
         <div>
           <Link to="/#">Math</Link>
         </div>
-
-        <div>
-          <Link to="/#">Random</Link>
-        </div>
-
-
       </div>
     </div>
   )
