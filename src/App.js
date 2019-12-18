@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Link } from "react-router-dom";
+import { Route, Link, withRouter } from "react-router-dom";
 
 // Importing custom components
 import Header from './components/Header';
@@ -18,6 +18,10 @@ class App extends React.Component {
       value: "",
       fact: ""
     }
+  }
+
+  componentDidMount() {
+    this.props.history.push("/Home")
   }
 
   render() {
@@ -48,4 +52,4 @@ class App extends React.Component {
 
 }
 
-export default App;
+export default withRouter(App);
