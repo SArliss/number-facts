@@ -39,15 +39,11 @@ class Number extends React.Component {
     return (
       <div className="category-wrapper">
         <h4>Choose an integer number, get creative!</h4>
-        
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
-
         <div className="number-fact">{this.state.fact}</div>
-        
-
       </div >
     );
   }

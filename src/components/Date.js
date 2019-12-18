@@ -39,15 +39,11 @@ class Date extends React.Component {
     return (
       <div className="category-wrapper">
         <h4>Choose a date, month/day format!</h4>
-        
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
-
         <div className="number-fact">{this.state.fact}</div>
-        
-
       </div >
     );
   }

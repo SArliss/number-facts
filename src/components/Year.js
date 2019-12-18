@@ -38,16 +38,12 @@ class Year extends React.Component {
   render() {
     return (
       <div className="category-wrapper">
-        <h4>Choose a date, month/day format!</h4>
-        
+        <h4>Choose a year, past of future!</h4>
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
-
         <div className="number-fact">{this.state.fact}</div>
-        
-
       </div >
     );
   }
