@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Route, Link, withRouter } from "react-router-dom";
-import { getFacts } from './services/Api-helper';
 
 // Importing custom components
 import Header from './components/Header';

@@ -4,7 +4,7 @@ import React from 'react';
 import { getFacts } from '../services/Api-helper';
 import Form from './Form';
 
-class Second extends React.Component {
+class Number extends React.Component {
   constructor(props) {
     super(props);
 
@@ -54,4 +54,4 @@ class Second extends React.Component {
 
 }
 
-export default Second;
+export default Number;
