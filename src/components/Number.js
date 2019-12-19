@@ -38,17 +38,19 @@ class Number extends React.Component {
   render() {
     return (
       <div className="category-wrapper">
-        <h4>Choose an integer number, get creative!</h4>
+        <h4>Choose a positive integer number, get creative!</h4>
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
-        
-        <div className="number-fact">{this.state.fact}</div>
+        {/* Conditional rendering, div with a fact only apears after user submits a number and a fact exists */}
+        {this.state.fact &&
+          <div className="number-fact">{this.state.fact}</div>
+        }
       </div >
     );
   }
-
 }
+
 
 export default Number;

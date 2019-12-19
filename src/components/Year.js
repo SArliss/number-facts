@@ -43,7 +43,10 @@ class Year extends React.Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
-        <div className="number-fact">{this.state.fact}</div>
+        {/* Conditional rendering, div with a fact only apears after user submits a number and a fact exists */}
+        {this.state.fact &&
+          <div className="number-fact">{this.state.fact}</div>
+        }
       </div >
     );
   }
