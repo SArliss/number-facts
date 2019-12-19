@@ -47,6 +47,7 @@ class Number extends React.Component {
         {this.state.fact &&
           <div className="number-fact">{this.state.fact}</div>
         }
+
       </div >
     );
   }

@@ -38,7 +38,7 @@ class Date extends React.Component {
   render() {
     return (
       <div className="category-wrapper">
-        <h4>Month/Day format only, please!</h4>
+        <h4>Month/Day format only.</h4>
         <Form
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
