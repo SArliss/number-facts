@@ -43,6 +43,7 @@ class Number extends React.Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
+        
         <div className="number-fact">{this.state.fact}</div>
       </div >
     );

@@ -7,7 +7,7 @@ function Header() {
   return (
     <header>
       <h1><Link to="/Home">NUMBER FACTS</Link></h1>
-      <h3>Bringing interesting facts to your metrics!</h3>
+      <h3>Tell me a number and I will tell you a fact!</h3>
     </header>
   )
 }
