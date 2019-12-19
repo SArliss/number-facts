@@ -20,10 +20,11 @@ img.bg {
 .App {
   display: flex;
   flex-direction: column;
-  max-width: 85%;
-  margin: 40px auto;
+  max-width: 50%;
+  margin: 30px auto;
   border-radius: 50px;
   background-color: rgba(219, 253, 255, 0.9);
+  padding: 10px;
 }
 
 .category-wrapper {
@@ -102,6 +103,7 @@ header>* {
 header>h1 {
   font-family: 'Bungee Inline', cursive;
   font-weight: 100;
+  font-size: 50px;
 }
 
 h3 {
@@ -137,7 +139,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  max-width: 300px;
   max-width: 100%;
   font-size: medium;
   margin: 20px;
@@ -180,6 +181,45 @@ a {
 a:visited {
   color: rgb(49, 186, 216);
 }
+
+
+@media only screen and (max-width: 667px) {
+  .App {
+    max-width: 85%;
+    margin-top: 0px;
+    padding: 10px;
+    min-height: 780px;
+  }
+  header>h1 {
+    font-size: 40px;
+  }
+  footer {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 959px) {
+  .App {
+    max-width: 60%;
+    min-height: 780px;
+    margin-top: 5px;
+  }
+  header>h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1300px) {
+  .App {
+    max-width: 60%;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 
 
 
