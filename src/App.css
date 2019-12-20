@@ -1,5 +1,6 @@
 body {
   background-image: url("https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png");
+  background-size: cover;
 }
 
 img.bg {
