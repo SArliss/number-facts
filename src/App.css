@@ -26,6 +26,7 @@ img.bg {
   border-radius: 50px;
   background-color: rgba(219, 253, 255, 0.9);
   padding: 10px;
+  box-shadow: 1px 1px 5px #6d9396;
 }
 
 .category-wrapper {
@@ -35,7 +36,7 @@ img.bg {
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
 .submit-form {
@@ -49,7 +50,7 @@ img.bg {
 
 .load-more{
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   align-content: center;
   justify-content: center;
 }
@@ -57,7 +58,7 @@ img.bg {
 input[type=text] {
   width: 100px;
   font-size: 15px;
-  padding: 15px;
+  padding: 0 10px;
   margin: 3px;
   border-radius: 15px;
   border: 1px solid rgb(113, 113, 113, .2);
@@ -82,14 +83,17 @@ input[type=submit] {
 
 .load-more>input[type=submit] {
   width: 100px;
-  font-size: 15px;
+  font-size: 18px;
   padding: 5px;
   margin: 3px;
-  border-radius: 15px;
+  border-radius: 5px;
   color: rgb(255, 255, 255);
   background-color: rgba(92, 187, 208, 0.625);
   text-align: center;
   outline: none;
+  font-weight: 600;
+  font-family: 'Handlee', cursive;
+  box-shadow: 1px 1px 3px #6d9396;
 }
 
 .number-fact {
@@ -118,6 +122,7 @@ header {
 header>* {
   margin: 0 auto;
   padding: 0 10px;
+  text-shadow: 10px 10px 10px #ffffff;
 }
 
 header>h1 {
@@ -143,6 +148,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.6);;
   border: 1px solid rgb(113, 113, 113, 0);
   font-family: 'Handlee', cursive;
+  box-shadow: 1px 1px 5px #6d9396;
 }
 
 /* Chose a category title */
@@ -153,6 +159,7 @@ h4 {
   margin: 40px 0 0 0;
   font-size: 25px;
   font-family: 'Handlee', cursive;
+  text-shadow: 3px 2px 15px #ffffff;
 }
 
 footer {
@@ -191,6 +198,7 @@ footer {
   background-color: rgba(251, 255, 175, 0.701);;
   border: 1px solid rgb(113, 113, 113, 0);
   font-family: 'Handlee', cursive;
+  box-shadow: 1px 1px 5px #6d9396;
 }
 
 a {
