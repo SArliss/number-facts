@@ -58,7 +58,7 @@ img.bg {
 input[type=text] {
   width: 100px;
   font-size: 15px;
-  padding: 0 10px;
+  padding: 10px;
   margin: 3px;
   border-radius: 15px;
   border: 1px solid rgb(113, 113, 113, .2);
@@ -82,10 +82,10 @@ input[type=submit] {
 }
 
 .load-more>input[type=submit] {
-  width: 100px;
+  min-width: 120px;
   font-size: 18px;
-  padding: 5px;
-  margin: 3px;
+  padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   color: rgb(255, 255, 255);
   background-color: rgba(92, 187, 208, 0.625);
