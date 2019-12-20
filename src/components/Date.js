@@ -47,6 +47,11 @@ class Date extends React.Component {
         {this.state.fact &&
           <div className="number-fact">{this.state.fact}</div>
         }
+        {this.state.fact &&
+          <form className="load-more" onSubmit={this.handleSubmit} >
+            <input type="submit" value= "Load more" />
+          </form>
+        }
       </div >
     );
   }
