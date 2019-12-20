@@ -43,9 +43,16 @@ class Number extends React.Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
+
         {/* Conditional rendering, div with a fact only apears after user submits a number and a fact exists */}
         {this.state.fact &&
           <div className="number-fact">{this.state.fact}</div>
+        }
+
+        {this.state.fact &&
+          <form className="load-more" onSubmit={this.handleSubmit} >
+            <input type="submit" value= "Load more" />
+          </form>
         }
 
       </div >
