@@ -186,17 +186,18 @@ a:visited {
 @media only screen and (max-width: 667px) {
   .App {
     max-width: 85%;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     padding: 15px;
     min-height: 690px;
+    background-color: rgba(219, 253, 255, 0.95);
   }
   header>h1 {
     font-size: 30px;
   }
   footer {
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 0px;
     font-size: 15px;
   }
   .front-categories>* {
