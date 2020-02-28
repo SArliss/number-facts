@@ -2,7 +2,7 @@
 Numbers: Fun and Facts
 
 # Description
-This webpage shows interesting facts abour numbers. User can choose if a search will be performed by:
+This webpage uses a third party API to access interesting facts about numbers. User can choose if a search will be performed by:
 * Integer number, date (month/day) or year. 
 * Integer number can return two types or response: trivia or math facts. 
 * Date and year only return one type of response: trivia. 
